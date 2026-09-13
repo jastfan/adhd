@@ -1,0 +1,21 @@
+{
+  "name": "adhd-mode",
+  "interface": {
+    "displayName": "I Have ADHD"
+  },
+  "plugins": [
+    {
+      "name": "adhd-mode",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/jastfan/adhd.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

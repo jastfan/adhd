@@ -1,0 +1,39 @@
+{
+  "name": "adhd-mode",
+  "version": "0.3.0",
+  "description": "ADHD-friendly output shaping for Codex: action first, numbered steps, no tangents, and visible progress.",
+  "author": {
+    "name": "Ayoub G.",
+    "url": "https://github.com/jastfan"
+  },
+  "homepage": "https://github.com/jastfan/adhd",
+  "repository": "https://github.com/jastfan/adhd",
+  "license": "MIT",
+  "keywords": [
+    "adhd",
+    "output-style",
+    "productivity",
+    "skills",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "I Have ADHD",
+    "shortDescription": "Action-first output for ADHD readers",
+    "longDescription": "Shape Codex responses for an ADHD reader by leading with the next action, numbering multi-step work, suppressing tangents, restating state, and making progress visible.",
+    "developerName": "Ayoub G.",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ],
+    "websiteURL": "https://github.com/jastfan/adhd",
+    "defaultPrompt": [
+      "Use adhd-mode for this task.",
+      "Make this answer action-first and easy to execute.",
+      "Review this response for ADHD-friendly structure."
+    ],
+    "brandColor": "#2563EB",
+    "composerIcon": "./logo.png",
+    "logo": "./logo.png"
+  }
+}

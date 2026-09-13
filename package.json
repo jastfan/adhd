@@ -1,0 +1,16 @@
+{
+  "name": "adhd-mode",
+  "version": "0.3.0",
+  "description": "Shape output for a reader with ADHD: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible.",
+  "license": "MIT",
+  "homepage": "https://github.com/jastfan/adhd",
+  "private": true,
+  "keywords": ["pi-package"],
+  "omp": {
+    "extensions": ["./extensions/adhd-mode.ts"]
+  },
+  "pi": {
+    "extensions": ["./extensions/adhd-mode.ts"],
+    "skills": ["./skills"]
+  }
+}
