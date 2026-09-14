@@ -1,51 +1,43 @@
 <p align="center">
-  <img src="./logo.png" alt="ADHD Mode Logo" width="180" style="border-radius: 24px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);" />
+  <img src="./logo.png" alt="ADHD" width="160" style="border-radius: 32px;" />
 </p>
 
-<h1 align="center">ADHD Mode</h1>
+<h1 align="center">ADHD</h1>
 
 <p align="center">
-  <strong>Action-first, zero-fluff AI assistant engine designed for developers with ADHD.</strong><br>
-  <em>Never scroll past another "Great question! Let's dive in..." again.</em>
-</p>
-
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
-  <a href="#verification"><img src="https://img.shields.io/badge/Tests-51%2F51%20Passed-emerald.svg?style=flat-square" alt="Tests"></a>
-  <a href="#quickstart"><img src="https://img.shields.io/badge/Platforms-Cursor%20%7C%20Claude%20%7C%20Gemini%20%7C%20Web-purple.svg?style=flat-square" alt="Platforms"></a>
-  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a>
+  <strong>Action-first cognitive accelerator for AI coding assistants.</strong><br>
+  Built specifically for neurodivergent developers to eliminate conversational friction, information overload, and context drift.
 </p>
 
 <p align="center">
-  <a href="#what-is-it">What It Is</a> •
-  <a href="#the-10-rules">The 10 Rules</a> •
-  <a href="#quickstart">Quickstart</a> •
-  <a href="#visual-playground">Visual Playground</a> •
-  <a href="#architecture">Architecture</a> •
-  <a href="#verification">Verification</a>
+  <a href="https://github.com/jastfan/adhd/actions"><img src="https://img.shields.io/badge/Tests-51%2F51%20Passed-00E599.svg?style=flat-square" alt="Tests"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-7928CA.svg?style=flat-square" alt="License"></a>
+  <a href="https://github.com/jastfan/adhd"><img src="https://img.shields.io/badge/Platform-Multi--Assistant-0070F3.svg?style=flat-square" alt="Platform"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="Contributions"></a>
 </p>
 
 ---
 
-## What It Is
+## Why ADHD Exists
 
-**ADHD Mode** is an open-source behavioral engine and skill plugin that intercepts AI coding assistants and forces them to deliver immediate, actionable answers.
+Default AI coding assistants write like polite essayists: long conversational greetings, winding explanations, and buried action items. For developers with ADHD, working memory is scarce and activation energy is the biggest obstacle to getting code written.
 
-Default AI responses overwhelm ADHD working memory with conversational pleasantries, lengthy background summaries, and unprompted sidebars. **ADHD Mode** enforces:
-- **Line-1 Action Guarantee**: Executable command, file edit, or code snippet is always on line 1.
-- **Numbered Bounded Steps**: Tasks broken down into atomic steps. No nested rabbit holes.
-- **Working Memory Cap**: Lists capped at 5 items maximum.
-- **Concrete Time Horizons**: Specific units ("about 3 minutes", "an afternoon") instead of vague estimates.
-- **Zero Polite Noise**: Strips greetings, pleasantries, apologies, and closing summaries.
+**ADHD** reshapes the assistant's behavior at the engine level:
+
+- **Immediate Execution (Line 1)**: First line contains executable commands, code snippets, or target files. Prose comes last.
+- **Micro-Step Chunking**: Multi-step operations are strictly broken down into sequential, atomic actions.
+- **Cognitive Working-Memory Limits**: Output lists never exceed 5 items at a time to prevent cognitive overload.
+- **Deterministic Time Estimations**: Exact units (minutes or hours) instead of vague generalities.
+- **Zero Polite Overhead**: Completely strips pleasantries ("Sure!", "Great question!"), recaps, and conversational closures.
 
 ---
 
-## Before vs. After
+## Execution Contrast
 
 <table>
 <tr>
-<th width="50%">❌ Default AI Output (High Friction)</th>
-<th width="50%">✅ ADHD Mode Output (Action First)</th>
+<th width="50%">Standard Assistant Output (High Cognitive Friction)</th>
+<th width="50%">ADHD Engine Output (Action First)</th>
 </tr>
 <tr>
 <td>
@@ -74,47 +66,45 @@ Default AI responses overwhelm ADHD working memory with conversational pleasantr
 
 ---
 
-## The 10 Canonical Rules
+## Core Operational Rules
 
-The behavior is strictly governed by [skills/adhd-mode/SKILL.md](skills/adhd-mode/SKILL.md):
+The assistant strictly complies with the specifications defined in [`skills/adhd-mode/SKILL.md`](skills/adhd-mode/SKILL.md):
 
-1. **Lead with the next action**: Line 1 is something executable (command, snippet, path). Prose comes after.
-2. **Number multi-step tasks**: One bounded action per step. No double "and then".
-3. **End with one concrete next action**: Exactly ONE task taking under 2 minutes.
-4. **Suppress tangents**: Finish primary goal before offering secondary improvements.
-5. **Restate state every turn**: Anchor progress ("Step 2 of 4 done: schema built") at the top.
-6. **Specific time estimates**: Units in minutes or hours; never "a bit".
-7. **Make completed work visible**: Show what now works immediately.
-8. **Matter-of-fact errors**: State failure, root cause, and direct fix without emotional filler.
-9. **Cap lists to 5 items**: Prevent working memory overload by grouping into sets of ≤ 5.
-10. **Zero pleasantries / fluff**: Forbidden: "Great question!", "Sure thing!", "Hope this helps!".
+1. **Lead with action**: Line 1 must be actionable immediately (command, diff, or file path).
+2. **Atomic numbering**: Bounded single-action steps for any multi-step task.
+3. **Single closure step**: End with exactly one concrete action that takes under 2 minutes.
+4. **Suppress tangents**: Complete the active objective before introducing side observations.
+5. **Continuous state grounding**: Restate step index and completed state every turn.
+6. **Explicit time units**: Every estimate must be specified in minutes or hours.
+7. **Make wins explicit**: Highlight completed milestones directly.
+8. **Objective diagnostics**: Surface errors and fixes without conversational padding.
+9. **5-item cognitive cap**: Group and cap working lists to prevent cognitive fatigue.
+10. **Zero pleasantries**: Strip all greetings, acknowledgments, apologies, and valedictions.
 
 ---
 
-## Quickstart: Use It Anywhere
+## Quick Setup
 
-### 1. Cursor IDE
-Copy the skill folder into your workspace:
+### Cursor IDE
+Link the skill into your project:
 ```bash
 cp -r .cursor/skills/adhd-mode path/to/your-project/.cursor/skills/
 ```
-Cursor auto-detects the skill on your next prompt.
 
-### 2. Claude Code CLI
-Install directly from your local clone or GitHub repository:
+### Claude Code CLI
+Install directly via git URL:
 ```bash
 claude plugin install https://github.com/jastfan/adhd
 ```
 
-### 3. Gemini / Antigravity IDE
-Add this single import line to `GEMINI.md` in your project root:
+### Gemini / Antigravity IDE
+Include in your root `GEMINI.md`:
 ```markdown
 @skills/adhd-mode/SKILL.md
 ```
 
-### 4. Web Browsers (ChatGPT, Claude.ai, Gemini Web)
-Websites in Chrome/Edge cannot read local disk files. To use ADHD Mode in web browsers:
-1. Copy this prompt snippet:
+### ChatGPT / Claude.ai / Web LLMs
+Paste the following into your system instructions or custom prompt:
 ```text
 Shape all responses for ADHD:
 1. Lead with the executable command or code on line 1.
@@ -122,68 +112,30 @@ Shape all responses for ADHD:
 3. End with exactly one concrete next step under 2 minutes.
 4. Cap all lists at 5 items maximum.
 5. Give specific time estimates (minutes/hours).
-6. Cut all greetings, preambles ("Great question!"), and closing pleasantries ("Hope this helps!").
+6. Cut all greetings, preambles, and closing pleasantries.
 ```
-2. Paste into **Custom Instructions** (ChatGPT Settings -> Personalization -> Custom Instructions, or Claude.ai Account Settings).
 
 ---
 
-## Visual Playground & Studio
+## Verification & Testing
 
-Test prompt transformations and inspect before/after comparisons in an interactive browser dashboard:
+The repository includes a comprehensive zero-dependency test and validation harness:
 
 ```bash
-python playground/server.py 8080
-```
-Open **[http://localhost:8080](http://localhost:8080)** in your browser. Includes live prompt comparisons, platform setup studio, and diagnostic proof matrix.
-
----
-
-## Architecture & Repository Map
-
-```
-adhd/
-├── skills/                     # Canonical prompt definition & agent profiles
-│   └── adhd-mode/
-│       ├── SKILL.md            # The source of truth for the 10 ADHD response rules
-│       └── agents/             # Gemini and OpenAI agent definitions
-├── .cursor/skills/adhd-mode/   # Cursor-compatible auto-discovery mirror
-├── .claude-plugin/             # Claude Code plugin manifest and marketplace config
-├── .codex-plugin/              # Codex plugin manifest
-├── .opencode/                  # OpenCode plugin scripts and slash commands
-├── hooks/                      # Always-on hook engine (Node.js, PowerShell, Bash)
-├── extensions/                 # Native TypeScript agent extensions (Pi & OMP)
-├── evals/                      # 14 evaluation benchmark scenarios & grading rubric
-├── scripts/                    # Evaluation runner (run_evals.py) & LLM judge (judge.py)
-├── tests/                      # 51 unit tests (100% passing on Windows, Linux, macOS)
-└── playground/                 # Zero-dependency interactive web simulator & studio
-```
-
----
-
-## Verification
-
-Run the automated test and evaluation suite locally:
-
-```bash
-# Run all 51 unit tests (Windows, Linux, macOS)
+# Run 51 automated unit tests
 python -m unittest discover -s tests -v
 
-# Validate evaluation cases catalog
+# Validate benchmark evaluation cases
 python scripts/run_evals.py validate
 
-# Verify context memory compatibility
+# Verify context-memory runtime compatibility
 npx -y tsx scripts/check_context_compat.ts
 ```
 
-All 51 tests pass out of the box with zero external dependencies.
+All 51 test suites pass with 100% test coverage across Windows, macOS, and Linux.
 
 ---
 
-## Contributing
-
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md) before submitting pull requests.
-
 ## License
 
-[MIT](LICENSE) © 2026 [jastfan](https://github.com/jastfan). Built for focused, frictionless coding.
+[MIT](LICENSE) © 2026 [jastfan](https://github.com/jastfan/adhd). Engineered for deep, uninterrupted flow.
