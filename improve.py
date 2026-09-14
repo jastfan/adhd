@@ -1,0 +1,1 @@
+#you should improve its more skill.md more because at this time more AI Agents are here pefectly working but also taking too much time and thinking and voilet the project timing and more things so you wanna go and improve it
